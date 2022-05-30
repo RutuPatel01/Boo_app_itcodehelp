@@ -1,0 +1,134 @@
+[
+    {
+        "id": 14,
+        "name": "Latest",
+        "sort_by": "newest",
+        "image_url": "https://booapp.b-cdn.net/images/categories/thumb/1568384055_medal.png"
+    },
+    {
+        "id": 13,
+        "name": "Popular",
+        "sort_by": "popular",
+        "image_url": "https://booapp.b-cdn.net/images/categories/thumb/1568383127_trending.png"
+    },
+    {
+        "id": 1,
+        "name": "Birthday",
+        "sort_by": "random",
+        "image_url": "https://booapp.b-cdn.net/images/categories/thumb/1556953953_birthday_cake.png"
+    },
+    {
+        "id": 2,
+        "name": "News",
+        "sort_by": "random",
+        "image_url": "https://booapp.b-cdn.net/images/categories/thumb/1556954243_journalism.png"
+    },
+    {
+        "id": 32,
+        "name": "Reels",
+        "sort_by": "random",
+        "image_url": "https://booapp.b-cdn.net/images/categories/thumb/1626853765_reel_logo.png"
+    },
+    {
+        "id": 6,
+        "name": "Love",
+        "sort_by": "random",
+        "image_url": "https://booapp.b-cdn.net/images/categories/thumb/1556954641_like.png"
+    },
+    {
+        "id": 58,
+        "name": "3D",
+        "sort_by": "random",
+        "image_url": "https://booapp.b-cdn.net/images/categories/thumb/1631857646_3d__2_.png"
+    },
+    {
+        "id": 5,
+        "name": "Annivarsary",
+        "sort_by": "random",
+        "image_url": "https://booapp.b-cdn.net/images/categories/thumb/1556954570_gift.png"
+    },
+    {
+        "id": 25,
+        "name": "Wedding",
+        "sort_by": "random",
+        "image_url": "https://booapp.b-cdn.net/images/categories/thumb/1587374786_bride.png"
+    },
+    {
+        "id": 59,
+        "name": "Glow",
+        "sort_by": "random",
+        "image_url": "https://booapp.b-cdn.net/images/categories/thumb/1631857980_clean__1_.png"
+    },
+    {
+        "id": 7,
+        "name": "Mahadev",
+        "sort_by": "random",
+        "image_url": "https://booapp.b-cdn.net/images/categories/thumb/1564561254_shiva.png"
+    },
+    {
+        "id": 3,
+        "name": "Magical",
+        "sort_by": "random",
+        "image_url": "https://booapp.b-cdn.net/images/categories/thumb/1556954379_magic_wand.png"
+    },
+    {
+        "id": 30,
+        "name": "Monsoon",
+        "sort_by": "random",
+        "image_url": "https://booapp.b-cdn.net/images/categories/thumb/1624690009_monsoon__1_.png"
+    },
+    {
+        "id": 52,
+        "name": "Hanuman Jayanti",
+        "sort_by": "random",
+        "image_url": "https://booapp.b-cdn.net/images/categories/thumb/1631257514_hanuman.png"
+    },
+    {
+        "id": 34,
+        "name": "Lo-Fi",
+        "sort_by": "random",
+        "image_url": "https://booapp.b-cdn.net/images/categories/thumb/1628056575_listening.png"
+    },
+    {
+        "id": 33,
+        "name": "Spactrum",
+        "sort_by": "random",
+        "image_url": "https://booapp.b-cdn.net/images/categories/thumb/1627703213_sound_waves__2_.png"
+    },
+    {
+        "id": 16,
+        "name": "Particle",
+        "sort_by": "random",
+        "image_url": "https://booapp.b-cdn.net/images/categories/thumb/1570432863_icons8_particle_96.png"
+    },
+    {
+        "id": 21,
+        "name": "Lyrical",
+        "sort_by": "random",
+        "image_url": "https://booapp.b-cdn.net/images/categories/thumb/1579089089_music.png"
+    },
+    {
+        "id": 28,
+        "name": "Born Baby",
+        "sort_by": "random",
+        "image_url": "https://booapp.b-cdn.net/images/categories/thumb/1623061530_2021_06_07.png"
+    },
+    {
+        "id": 4,
+        "name": "Dialogue",
+        "sort_by": "random",
+        "image_url": "https://booapp.b-cdn.net/images/categories/thumb/1556954463_files_and_folders.png"
+    },
+    {
+        "id": 8,
+        "name": "Friendship",
+        "sort_by": "random",
+        "image_url": "https://booapp.b-cdn.net/images/categories/thumb/1564742950_friends.png"
+    },
+    {
+        "id": 31,
+        "name": "Monthly Baby",
+        "sort_by": "random",
+        "image_url": "https://booapp.b-cdn.net/images/categories/thumb/1626424031_born__2_.png"
+    }
+]
