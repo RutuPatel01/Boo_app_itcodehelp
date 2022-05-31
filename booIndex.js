@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
     res.send("Boo App!!");
 });
 
-app.get("/templates", async (req, res) => {
+app.get("/get-templates", async (req, res) => {
     let sortBy = req.query.sort_by;
     let catId = req.query.cat_id;
 
@@ -47,19 +47,65 @@ app.get("/templates", async (req, res) => {
     // ]);
     if (sortBy && catId) {
         let newData = await temp2.find({ cat_id: catId, sort_by: sortBy });
-        res.send({ status: true, message: 'Templates', lenght: newData.length, templates: newData, categories: categoryData });
+        res.send({ status: true, message: 'Templates', length: newData.length, templates: newData, categories: categoryData });
     }
     else if (catId && !sortBy) {
         let newData = await temp2.find({ cat_id: catId });
-        res.send({ status: true, message: 'Templates', lenght: newData.length, templates: newData, categories: categoryData });
+        res.send({ status: true, message: 'Templates', length: newData.length, templates: newData, categories: categoryData });
     }
     else if (!catId && sortBy) {
         let newData = await temp2.find({ sort_by: sortBy });
-        res.send({ status: true, message: 'Templates', lenght: newData.length, templates: newData, categories: categoryData });
+        res.send({ status: true, message: 'Templates', length: newData.length, templates: newData, categories: categoryData });
     }
     else {
         let newData = await temp2.find();
-        res.send({ status: true, message: 'Templates', lenght: newData.length, templates: newData, categories: categoryData });
+        res.send({ status: true, message: 'Templates', length: newData.length, templates: newData, categories: categoryData });
+    }
+
+});
+
+app.get("/get-cat-templates", async (req, res) => {
+    let sortBy = req.query.sort_by;
+    let catId = req.query.cat_id;
+
+    // if (sortBy) {
+    //     let getData = await temp2.find({ sort_by: sortBy });
+    //     // console.log("getData ......", getData);
+    //     res.send({ status: true, message: 'Templates',lenght: getData.length, data: { templates: getData, categories: categoryData } });
+    // } if (catId) {
+    //     let getData = await temp2.find({ cat_id: catId });
+    //     // console.log("getData ......", getData);
+    //     res.send({ status: true, message: 'Templates',lenght: getData.length, data: { templates: getData, categories: categoryData } });
+    // } if (sortBy && catId) {
+    //     let getData = await temp2.find({ cat_id: catId, sort_by: sortBy });
+    //     // console.log("getData ......", getData);
+    //     res.send({ status: true, message: 'Templates',lenght: getData.length, data: { templates: getData, categories: categoryData } });
+    // } else {
+    //     let getData = await temp2.find();
+    //     // console.log("getData ......", getData);
+    //     res.send({ status: true, message: 'Templates',length: getData.length, data: { templates: getData, categories: categoryData } });
+    // }
+
+    // let newData = await temp2.aggregate([
+    //     {
+    //         $match: qry
+    //     }
+    // ]);
+    if (sortBy && catId) {
+        let newData = await temp2.find({ cat_id: catId, sort_by: sortBy });
+        res.send({ status: true, message: 'Templates', length: newData.length, templates: newData, categories: categoryData });
+    }
+    else if (catId && !sortBy) {
+        let newData = await temp2.find({ cat_id: catId });
+        res.send({ status: true, message: 'Templates', length: newData.length, templates: newData, categories: categoryData });
+    }
+    else if (!catId && sortBy) {
+        let newData = await temp2.find({ sort_by: sortBy });
+        res.send({ status: true, message: 'Templates', length: newData.length, templates: newData, categories: categoryData });
+    }
+    else {
+        let newData = await temp2.find();
+        res.send({ status: true, message: 'Templates', length: newData.length, templates: newData, categories: categoryData });
     }
 
 });
