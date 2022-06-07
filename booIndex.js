@@ -47,19 +47,19 @@ app.get("/get-templates", async (req, res) => {
     // ]);
     if (sortBy && catId) {
         let newData = await temp2.find({ cat_id: catId, sort_by: sortBy });
-        res.send({ status: true, message: 'Templates', length: newData.length, templates: newData, categories: categoryData });
+        res.send({ status: true, message: 'Templates', length: newData.length, data:{templates: newData, categories: categoryData} });
     }
     else if (catId && !sortBy) {
         let newData = await temp2.find({ cat_id: catId });
-        res.send({ status: true, message: 'Templates', length: newData.length, templates: newData, categories: categoryData });
+        res.send({ status: true, message: 'Templates', length: newData.length, data:{templates: newData, categories: categoryData} });
     }
     else if (!catId && sortBy) {
         let newData = await temp2.find({ sort_by: sortBy });
-        res.send({ status: true, message: 'Templates', length: newData.length, templates: newData, categories: categoryData });
+        res.send({ status: true, message: 'Templates', length: newData.length, data:{templates: newData, categories: categoryData} });
     }
     else {
         let newData = await temp2.find();
-        res.send({ status: true, message: 'Templates', length: newData.length, templates: newData, categories: categoryData });
+        res.send({ status: true, message: 'Templates', length: newData.length, data:{templates: newData, categories: categoryData }});
     }
 
 });
@@ -93,19 +93,19 @@ app.get("/get-cat-templates", async (req, res) => {
     // ]);
     if (sortBy && catId) {
         let newData = await temp2.find({ cat_id: catId, sort_by: sortBy });
-        res.send({ status: true, message: 'Templates', length: newData.length, templates: newData, categories: categoryData });
+        res.send({ status: true, message: 'Templates', length: newData.length, data: {templates: newData, categories: categoryData} });
     }
     else if (catId && !sortBy) {
         let newData = await temp2.find({ cat_id: catId });
-        res.send({ status: true, message: 'Templates', length: newData.length, templates: newData, categories: categoryData });
+        res.send({ status: true, message: 'Templates', length: newData.length, data:{templates: newData, categories: categoryData} });
     }
     else if (!catId && sortBy) {
         let newData = await temp2.find({ sort_by: sortBy });
-        res.send({ status: true, message: 'Templates', length: newData.length, templates: newData, categories: categoryData });
+        res.send({ status: true, message: 'Templates', length: newData.length, data:{templates: newData, categories: categoryData}});
     }
     else {
         let newData = await temp2.find();
-        res.send({ status: true, message: 'Templates', length: newData.length, templates: newData, categories: categoryData });
+        res.send({ status: true, message: 'Templates', length: newData.length, data:{templates: newData, categories: categoryData} });
     }
 
 });
